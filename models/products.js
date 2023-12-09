@@ -17,15 +17,12 @@ const getPro = (cb) => {
 
 module.exports = class Product {
   constructor(title) {
-    console.log('title => ' , title);
     this.title = title;
   }
   saveP() {
     getPro((pro) => {
       pro.push(this);
-      fs.writeFile(pth, JSON.stringify(pro), (err) => {
-        console.log(err);
-      });
+      fs.writeFile(pth, JSON.stringify(pro))
     });
   }
   static fetchAll(cb) {
