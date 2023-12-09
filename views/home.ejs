@@ -1,12 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= title %></title>
-    <link rel="stylesheet" href="/css/main.css">
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> <%= title %> </title>
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item <%= path === "/"? 'active' : ''%>">
+                <a href="/">Home</a>
+            </li>
+            <li class="header__nav-item <%= path === "/products"? 'active' : ''%></li>">
+              <a href="/products">add products</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+  </body>
 </html>
