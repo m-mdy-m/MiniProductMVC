@@ -4,16 +4,16 @@ MiniProductMVC is a simple Node.js web application for managing a list of produc
 
 ## Features
 
-- `GET /`: The root path that might contain a welcome message or overview of the application.
+- `GET /`: The default route which can display a welcome message or an overview of the application.
 - `GET /products`: Displays the list of all products retrieved from the JSON database.
 - `POST /add-products`: Allows users to add new product details which are then stored in the JSON file.
 
 ## Technologies Used
 
-- **Express.js**: A flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
-- **Nodemon**: A utility that monitors for any changes in your source and automatically restarts your server for development convenience.
-- **EJS**: Embedded JavaScript templates engine that lets you generate HTML markup with plain JavaScript.
-- **Body-parser**: A middleware that is responsible for parsing the incoming request bodies in a middleware before handling it.
+- **Express.js**: A web application framework for Node.js, designed for building web applications and APIs.
+- **Nodemon**: A utility that monitors for any changes in the source code and automatically restarts the server.
+- **EJS**: A templating engine used to generate HTML markup with plain JavaScript.
+- **Body-parser**: Express middleware that parses incoming request bodies before your handlers, available under the `req.body` property.
 
 ## Getting Started
 
@@ -21,34 +21,39 @@ These instructions will get you a copy of the project up and running on your
 
 ## Installation and Setup
 ---
-To run the project, you need to have Node.js installed on your machine. Follow the steps below to install and start the MiniProductMVC project:
+Ensure that Node.js is installed on your machine. Then, follow these steps to install and run the MiniProductMVC project:
 
-1.Clone the repository:
+1. **Clone the repository**:
 ```bash
 git clone https://github.com/m-mdy-m/MiniProductMVC.git
 ```
-2.Navigate to the project directory:
+2. **Navigate to the project directory**:
 ```bash
 cd MiniProductMVC
 ```
-3.Install the project dependencies:
+3. **Install the project dependencies**:
 ```bash
 npm install
 ```
 
 ## Running the Project
 ---
-To start the project, run the following command:
+Start the project with the following command:
 ```bash
-npm start
+npm run start
 ```
 `The project will start on the local server at http://localhost:3000/`
 
 ## Usage
 --
-- Access the homepage at http://localhost:3000/
-- View product information at http://localhost:3000/products
-- Add product information at http://localhost:3000/add-products
+- **Homepage**: Visit http://localhost:3000/ to view the homepage and navigation options.
+- **View Products**: To view the list of products, go to http://localhost:3000/products.
+- **Add Products**: To add a new product, navigate to http://localhost:3000/add-products and use the provided form.
 
-Congratulations! Your MiniProductMVC project is now up and running.
-## Note: Update the actual URLs, usernames, and any other specific details as per your project’s requirements.
+## Contributing
+---
+If you have suggestions for improving MiniProductMVC, please feel free to make a pull request. For major changes, please open an issue first to discuss what you would like to change.
+
+Please ensure to update tests as appropriate.
+## License
+This project is licensed under the MIT License - see the `LICENSE.md` file for details.
