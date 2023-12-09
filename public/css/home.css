@@ -4,9 +4,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 h1{
-    font-size: 200px;
+    font-size: 50px;
     font-family: sans-serif;
     color: var(--color_primary-300);
+    text-transform: capitalize;
+    border-bottom: 1px solid var(--color_primary-100);
 }

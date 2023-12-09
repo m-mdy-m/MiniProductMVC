@@ -6,7 +6,6 @@ const pth = path.join(
   "listProducts.json"
 );
 const getPro = (cb) => {
-  console.log("cb", cb);
   fs.readFile(pth, (err, data) => {
     if (err) {
       return cb([]);
@@ -18,11 +17,11 @@ const getPro = (cb) => {
 
 module.exports = class Product {
   constructor(title) {
+    console.log('title => ' , title);
     this.title = title;
   }
   saveP() {
     getPro((pro) => {
-      console.log("savd this =>", this);
       pro.push(this);
       fs.writeFile(pth, JSON.stringify(pro), (err) => {
         console.log(err);
@@ -30,7 +29,6 @@ module.exports = class Product {
     });
   }
   static fetchAll(cb) {
-    console.log("cb fetch =>", cb);
     getPro(cb);
   }
 };

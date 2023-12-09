@@ -4,6 +4,18 @@
 <%- include("includes/header.ejs") %>
   <main class="main">
     <h1>HOME</h1>
+    <% if (prods.length > 0){ %>
+      <div>
+        <% for (let product of prods) {%>
+          <article>
+            <h1> <% product.title %> </h1>
+          </article>
+        <% } %>
+      </div>
+      <h1>not product</h1>
+      <% } else { %>
+        <h2>no product found</h2>
+        <% } %>
   </main>
 <%- include("includes/end.ejs") %>
  
