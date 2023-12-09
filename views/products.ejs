@@ -1,0 +1,12 @@
+<%- include("includes/base.ejs") %>
+    <link rel="stylesheet" href="/css/products.css">
+  </head>
+<%- include("includes/header.ejs") %>
+  <main class="main">
+    <form action="/add-products" method="POST" class="forms">
+        <input type="text" placeholder="Please type product" class="forms__input" autofocus>
+        <button type="submit" class="forms__btn">Send</button>
+    </form>
+  </main>
+<%- include("includes/end.ejs") %>
+ 

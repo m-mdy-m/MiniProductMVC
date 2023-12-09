@@ -7,3 +7,6 @@
     display: grid;
     grid-template-rows: 15% 85%;
 }
+.active.header__nav-item::before{
+    transform: scale(1);
+}

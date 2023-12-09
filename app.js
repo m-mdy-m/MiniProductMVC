@@ -8,7 +8,9 @@ app.set("views", "views")
 app.use(bodyParser.urlencoded({extended : false}))
 app.use(express.static(path.join(__dirname, 'public')))
 const home = require("./routes/home.js")
+const product = require("./routes/products.js")
 app.use(home)
+app.use(product)
 app.use(controllersErr.err404)
 
 
