@@ -4,9 +4,6 @@
     margin: 0 auto;
     padding: 0 10rem;
     background-color: var(--color_primary);
-}
-.active{
-    padding: 4px;
-    border-radius: 50%;
-    background-color: green;
+    display: grid;
+    grid-template-rows: 15% 85%;
 }
