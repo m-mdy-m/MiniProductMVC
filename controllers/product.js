@@ -1,6 +1,7 @@
-exports.getProducts =  (req,res)=>{
-    res.render('products', {title : "products"})
-}
-exports.postProducts =(req,res)=>{
-    res.redirect('/')
-}
+exports.getProducts = (req, res) => {
+  console.log("Products Page");
+  res.render("products", { title: "products", path: req.path });
+};
+exports.postProducts = (req, res) => {
+  res.redirect("/");
+};
