@@ -1,9 +1,9 @@
 .container{
     width: 100%;
-    height: 100%;
+    height: 100vh;
     margin: 0 auto;
-    padding: 0 4rem;
-    background-color: red;
+    padding: 0 10rem;
+    background-color: var(--color_primary);
 }
 .active{
     padding: 4px;
